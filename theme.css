@@ -1,0 +1,358 @@
+
+
+
+html,body{
+  background-color:#fff;
+}
+
+#hd img {
+  height:60px;
+  width:226px;
+  margin-left: 14px;
+}
+
+
+#iw-sw-lostpass html, #iw-sw-lostpass body,
+#iw-nw-lostpass html, #iw-nw-lostpass body,
+#iw-sw-index html, #iw-sw-index body,
+#iw-nw-index html, #iw-nw-index body {
+  background:#ABABAB;
+}
+#doc3 {
+  /* Work-around for IE since it doesn't support min-width
+   * The minimum width for IE is larger than for other browers, since it doesn't
+   * collapse things as neatly as others
+   */
+  width:expression(document.body.clientWidth < 1010? "999px": "auto" );
+  /* Width at which the logos start to overlap the quick menu */
+  min-width: 860px;
+  margin: 0;
+}
+
+#hd {
+  background: none;
+}
+
+#hd a {
+  border-bottom: 0;
+}
+
+#bd {
+  background: none;
+  padding-right: 1em;
+}
+
+#ft {
+  background: none;
+  font-weight: bold;
+  font-size: 93%;
+  color: #C0C0C0;
+}
+
+#ft a {
+  font-family: verdana, helvetica, arial, sans-serif;
+  font-weight: bold;
+  color: #C0C0C0;
+}
+
+.iw-yui #yui-main {
+  background: none;
+}
+
+.iw-yui .yui-b {
+  float:left;
+  width:168px;
+}
+
+/*.iw-big-menu .iw-yui .yui-b {
+  width: 210px;
+}*/
+
+.iw-yui #yui-main {
+  float:right;
+  margin-left:-220px;/* IE: preserve layout at narrow widths */
+  padding-bottom: 6em;
+}
+
+#iw-content {
+  margin-left: 220px;
+}
+
+#iw-hd {
+  text-align: right;
+  background: none;
+  padding-bottom: 19px;
+}
+
+/*
+.iw-big-menu #iw-content,
+.iw-big-menu .iw-yui #yui-main {
+  background-image: none;
+}*/
+
+/* This fixes IE6 and 7 */
+.iw_ie #iw-hd {
+  padding-bottom: 17px;
+}
+
+/* This fixes IE8 */
+.iw_ie8 #iw-hd {
+  padding-bottom: 15px;
+}
+
+#hd h2 {
+  font-weight: bold;
+  font-size: 15px;
+  font-variant: small-caps;
+  margin-left: 15px;
+  letter-spacing: 0.1em;
+  position: absolute;
+  line-height: 30px;
+}
+
+/*
+.iw-big-menu #hd h2 {
+  display: none;
+}*/
+
+#iw-ft {
+  text-align: right;
+  background: url(images/ft.jpg) no-repeat scroll top left;
+  padding: 70px 6px 6px;
+}
+
+/*
+.iw-big-menu #iw-ft {
+  background-image: url(images/ft_big_menu.jpg);
+}*/
+
+.iw-left {
+  float: left;
+}
+
+#managing {
+  font-weight: bold;
+  margin: 1em 2em;
+}
+
+
+#iw-quickmenu {
+  line-height: 25px;
+  padding-right: 10px;
+  background: none;
+  position: relative;
+  left: 0;
+  top: 0;
+  float: right;
+}
+
+#iw-quickmenu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#iw-quickmenu li {
+  float: left;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 93%;
+  background: none;
+}
+
+#iw-quickmenu a {
+  color: #C0C0C0;
+  font-weight: bold;
+  display: block;
+  padding: 0 10px 0 13px;
+  background: none;
+}
+
+#iw-quickmenu .iw-quickmenu-first a {
+  padding-left: 26px;
+  background: none;
+}
+
+#iw-menu, #iw-sidebar {
+  margin-top: 42px;
+}
+
+#iw-sidebar #iw-menu {
+  margin-top: 1em;
+}
+#iw-menu a{
+  position:relative;
+}
+#iw-menu li:before{
+  border-radius:3px;
+  width:100%;
+  left:0;
+  height:2.3em;
+  position:absolute;
+  display:block;
+  content:" ";
+  background-image: -moz-linear-gradient(#FFF, #DDD);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#DDD));
+}
+/*
+ * LOGIN PAGE STUFF
+ */
+
+#iw-login #doc3 {
+  width: 750px;
+  min-width: 100px;/* Arbitrarily smaller to override #doc3 min-width */
+  margin: auto;
+}
+
+#iw-login #iw-quickmenu {
+  display: none;
+}
+
+#iw-login #hd h2 {
+  display: none;
+}
+
+#iw-login #bd {
+  background: #FFF url(images/login_left.jpg) no-repeat scroll 164px 40px;
+  text-align: center;
+  padding: 0;
+}
+
+#iw-login #iw-bd {
+  background: url(images/login_right.jpg) no-repeat scroll right bottom;
+}
+
+#iw-login #iw-bd-hd {
+  background: url(images/login_bg.jpg) no-repeat scroll left bottom;
+}
+
+#iw-login #iw-bd-hd h1 {
+  font-size: 16px;
+  line-height: 28px;
+  padding-top: 12px;
+  font-variant: small-caps;
+  margin-left: 275px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+#iw-login #bd form {
+  margin-top: 6em;
+  padding-bottom: 6em;
+}
+
+#iw-login #bd form table {
+  margin: auto;
+  text-align: left;
+}
+
+#iw-login #bd td {
+  padding: 3px;
+}
+
+#iw-login #ft {
+  background: #4C4C4C;
+}
+
+#iw-login #iw-ft {
+  background: url(images/ft_login.jpg) no-repeat scroll right top;
+  padding: 34px 6px 6px;
+}
+
+#iw-login #iw-ft a {
+  color: #C0C0C0;
+}
+
+#iw-login .iw-negative-box {
+  margin: 1em auto -3em;
+  width: 300px;
+}
+
+.yui-skin-sam .iw-popup .yui-panel .hd {
+  background: #4C4C4C url( images/hd_left.gif ) no-repeat -260px bottom;
+  border: 1px solid #808080;
+  border-bottom: none;
+  padding: 0 0 0 10px;
+}
+
+.yui-skin-sam .iw-popup .yui-panel .bd {
+  background-image: url( images/hd.jpg );
+  background-image: url( images/hd.jpg ), url( images/hd_tile.jpg );
+  background-position: -260px top;
+  background-repeat: no-repeat;
+  background-repeat: no-repeat, repeat-x;
+  padding-top: 25px;
+}
+
+.yui-skin-sam .iw-popup .yui-panel .bd,
+.yui-skin-sam .iw-popup .yui-panel .ft {
+  background-color: #FFF;
+}
+
+.iw-popup .hd .l {
+  color: #FFF;
+}
+
+/* smartphones, tablets (portrait) ----------- */
+@media only screen
+ and (orientation : portrait) {
+
+  .iw-portable #yui-main,
+  .iw-portable #bd {
+    background-image: none;
+  }
+
+  .iw-portable #bd {
+    padding-left: 1em;
+  }
+
+  .iw-portable #hd h2 {
+    display: none;
+  }
+
+  .iw-portable #iw-ft {
+    background: url(images/ft_login.jpg) no-repeat scroll left 37px;
+  }
+
+  .iw-smartphone #iw-quickmenu-help {
+    display: none;
+  }
+}
+
+.iw-no-scale #iw-quickmenu {
+  left: 0;
+  top: 50px;
+}
+
+.iw-no-scale #iw-quickmenu ul {
+  position: static;
+}
+
+.iw-no-scale #hd {
+  height: 94px;
+}
+
+.iw-no-scale #iw-hd {
+  background: none;
+}
+
+.iw-portable #doc3 {
+  min-width: inherit;
+}
+
+.iw-no-scale #iw-hd-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 0;
+}
+
+.iw-no-scale #hd .iw-left {
+  float: none;
+}
+
+.iw-smartphone #iw-hd-right {
+  visibility: hidden;
+}
