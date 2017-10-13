@@ -1,96 +1,54 @@
 html,body{
-  background-color:#fff;
+  background-color: #fff;
 }
-#hd img {
-  height:60px;
-  width:226px;
-  margin-left: 14px;
+.logo {
+  width:175px;
+  padding: 10px;
 }
-#iw-sw-lostpass html, #iw-sw-lostpass body,
-#iw-nw-lostpass html, #iw-nw-lostpass body,
-#iw-sw-index html, #iw-sw-index body,
-#iw-nw-index html, #iw-nw-index body {
-  background:#ABABAB;
+input[type="text"], input[type="email"], input[type="password"], select {
+  padding: .5rem .75rem;
+  color: #495057;
+  background-color: #fff;
+  background-image: none;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 5px;
 }
-#doc3 {
-  /* Work-around for IE since it doesn't support min-width
-   * The minimum width for IE is larger than for other browers, since it doesn't
-   * collapse things as neatly as others
-   */
-  width:expression(document.body.clientWidth < 1010? "999px": "auto" );
-  /* Width at which the logos start to overlap the quick menu */
-  min-width: 860px;
+body .iw-form .yui-ac .iw-form-img {
+  top: 7px;
+}
+#pass_genpassword {
+  font-family: monospace;
+  font-size: 14px;
+  padding: 2px 0;
+}
+.iw-form .iw-form-input .iw-verystrong {
+  color: green;
+}
+.iw-sb-box .hd {
+  background: none;
   margin: 0;
+  color: #fff;
+  font-weight: normal;
 }
 #hd {
   background: none;
 }
-#hd a {
-  border-bottom: 0;
-}
 #bd {
   background: none;
   padding-right: 1em;
+  background-color: #f3f3f4;
 }
 #ft {
   background: none;
-  font-weight: bold;
-  font-size: 93%;
-  color: #C0C0C0;
-}
-#ft a {
-  font-family: verdana, helvetica, arial, sans-serif;
-  font-weight: bold;
-  color: #C0C0C0;
-}
-.iw-yui #yui-main {
-  background: none;
-}
-.iw-yui .yui-b {
-  float:left;
-  width:168px;
-}
-.iw-yui #yui-main {
-  float:right;
-  margin-left:-220px;/* IE: preserve layout at narrow widths */
-  padding-bottom: 6em;
-}
-#iw-content {
-  margin-left: 220px;
+  font-weight: normal;
+  font-size: 10px;
+  color: #c0c0c0;
 }
 #iw-hd {
   text-align: right;
   background: none;
   padding-bottom: 19px;
-}
-/* This fixes IE6 and 7 */
-.iw_ie #iw-hd {
-  padding-bottom: 17px;
-}
-/* This fixes IE8 */
-.iw_ie8 #iw-hd {
-  padding-bottom: 15px;
-}
-#hd h2 {
-  font-weight: bold;
-  font-size: 15px;
-  font-variant: small-caps;
-  margin-left: 15px;
-  letter-spacing: 0.1em;
-  position: absolute;
-  line-height: 30px;
-}
-#iw-ft {
-  text-align: right;
-  background: url(images/ft.jpg) no-repeat scroll top left;
-  padding: 70px 6px 6px;
-}
-.iw-left {
-  float: left;
-}
-#managing {
-  font-weight: bold;
-  margin: 1em 2em;
 }
 #iw-quickmenu {
   line-height: 25px;
@@ -100,11 +58,6 @@ html,body{
   left: 0;
   top: 0;
   float: right;
-}
-#iw-quickmenu ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 #iw-quickmenu li {
   float: left;
@@ -126,14 +79,126 @@ html,body{
   padding-left: 26px;
   background: none;
 }
+#yui-main {
+  min-height: 0;
+}
+.iw-yui #yui-main {
+  background: none;
+  background-color: #2f4050;
+}
+table.iw-table-payload, .iw-fake-table-hd, .iw-box {
+  background-color: #fff;
+}
+
+
+
+#iw-sw-lostpass html, #iw-sw-lostpass body,
+#iw-nw-lostpass html, #iw-nw-lostpass body,
+#iw-sw-index html, #iw-sw-index body,
+#iw-nw-index html, #iw-nw-index body {
+  background:#ABABAB;
+}
+#doc3 {
+  /* Work-around for IE since it doesn't support min-width
+   * The minimum width for IE is larger than for other browers, since it doesn't
+   * collapse things as neatly as others
+   */
+  width:expression(document.body.clientWidth < 1010? "999px": "auto" );
+  /* Width at which the logos start to overlap the quick menu */
+  min-width: 860px;
+  margin: 0;
+}
+div #hd {
+  background-color: #fff;
+}
+#hd a {
+  border-bottom: 0;
+}
+#ft a {
+  font-family: verdana, helvetica, arial, sans-serif;
+  font-weight: normal;
+  color: #C0C0C0;
+}
+.iw-menu-current:before {
+  right: 1px;
+}
+.iw-yui .yui-b {
+  float:left;
+  width: 200px;
+  height: 100%;
+  padding-top: 10px;
+}
+.iw-yui #yui-main {
+  float:right;
+  margin-left:-220px;/* IE: preserve layout at narrow widths */
+  padding-bottom: 0;
+}
+#iw-content {
+  margin-left: 200px;
+  background-color: #f3f3f4;
+  padding-left: 10px;
+}
+/* This fixes IE6 and 7 */
+.iw_ie #iw-hd {
+  padding-bottom: 17px;
+}
+/* This fixes IE8 */
+.iw_ie8 #iw-hd {
+  padding-bottom: 15px;
+}
+#hd h2 {
+  font-weight: bold;
+  font-size: 15px;
+  font-variant: small-caps;
+  margin-left: 15px;
+  letter-spacing: 0.1em;
+  position: absolute;
+  line-height: 30px;
+}
+#iw-ft {
+  text-align: right;
+  background: none;
+  margin-top: 10px;
+  padding: 20px 0;
+}
+.iw-left {
+  float: none;
+}
+#managing {
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 5px;
+}
+#iw-quickmenu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#iw-sidebar {
+  background-color: #2f4050;
+}
+#iw-sidebar a:link, #iw-sidebar a:visited, #iw-sidebar a:active {
+  color: #fff;
+  font-weight: 200;
+  border-radius: 0;
+  border: none;
+}
+#iw-sidebar a:hover {
+  background-color: #293846;
+  border: none;
+}
+#iw-menu {
+  width: auto;
+}
 #iw-menu, #iw-sidebar {
-  margin-top: 42px;
+  margin: 0;
 }
 #iw-sidebar #iw-menu {
   margin-top: 1em;
 }
 #iw-menu a{
   position:relative;
+  padding: .5rem 1rem;
 }
 #iw-menu li:before{
   border-radius:3px;
@@ -143,8 +208,7 @@ html,body{
   position:absolute;
   display:block;
   content:" ";
-  background-image: -moz-linear-gradient(#FFF, #DDD);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#DDD));
+  background-image: none;
 }
 /*
  * LOGIN PAGE STUFF
@@ -206,17 +270,14 @@ html,body{
   width: 300px;
 }
 .yui-skin-sam .iw-popup .yui-panel .hd {
-  background: #4C4C4C url( images/hd_left.gif ) no-repeat -260px bottom;
+  background: none;
+  background-color: #2f4050;
   border: 1px solid #808080;
   border-bottom: none;
   padding: 0 0 0 10px;
 }
 .yui-skin-sam .iw-popup .yui-panel .bd {
-  background-image: url( images/hd.jpg );
-  background-image: url( images/hd.jpg ), url( images/hd_tile.jpg );
-  background-position: -260px top;
-  background-repeat: no-repeat;
-  background-repeat: no-repeat, repeat-x;
+  background-image: none;
   padding-top: 25px;
 }
 .yui-skin-sam .iw-popup .yui-panel .bd,
