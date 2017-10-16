@@ -1,5 +1,5 @@
 html,body{
-  background-color: #fff;
+  background-color: #f3f3f4;
 }
 .logo {
   width:175px;
@@ -38,12 +38,21 @@ body .iw-form .yui-ac .iw-form-img {
   background: none;
   padding-right: 1em;
   background-color: #f3f3f4;
+  height: 100%;
 }
 #ft {
-  background: none;
+  clear: both;
   font-weight: normal;
   font-size: 10px;
   color: #c0c0c0;
+  text-align: right;
+  background: none;
+  margin: 0;
+  padding: 20px 0;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 14px;
 }
 #iw-hd {
   text-align: right;
@@ -126,12 +135,16 @@ div #hd {
   float:left;
   width: 200px;
   height: 100%;
-  padding-top: 10px;
+  position: absolute;
+  top:0;
+  left: 0;
+  background-color: #2f4050;
 }
 .iw-yui #yui-main {
   float:right;
   margin-left:-220px;/* IE: preserve layout at narrow widths */
   padding-bottom: 0;
+  margin-bottom: 100px;
 }
 #iw-content {
   margin-left: 200px;
@@ -156,18 +169,17 @@ div #hd {
   line-height: 30px;
 }
 #iw-ft {
-  text-align: right;
   background: none;
-  margin-top: 10px;
-  padding: 20px 0;
+  padding: 0;
 }
 .iw-left {
   float: none;
+  padding: 0;
 }
 #managing {
   font-weight: bold;
   margin: 0;
-  padding-bottom: 5px;
+  padding: 5px 0;
 }
 #iw-quickmenu ul {
   margin: 0;
@@ -183,7 +195,7 @@ div #hd {
   border-radius: 0;
   border: none;
 }
-#iw-sidebar a:hover {
+#iw-sidebar a:hover, .iw-menu-current {
   background-color: #293846;
   border: none;
 }
@@ -259,8 +271,8 @@ div #hd {
   background: #4C4C4C;
 }
 #iw-login #iw-ft {
-  background: url(images/ft_login.jpg) no-repeat scroll right top;
-  padding: 34px 6px 6px;
+  background: none;
+  padding: 0;
 }
 #iw-login #iw-ft a {
   color: #C0C0C0;
