@@ -1,0 +1,11 @@
+[nexcess]
+name="Nexcess.net"
+author="Nexcess.net"
+hd_left_url="http://www.nexcess.net"
+hd_right_url="http://www.interworx.com"
+help_url="http://www.nexcess.net/support/"
+description="Nexcess.net"
+type="public"
+base_theme="interworx"
+version=2
+custom_favicon="1"
