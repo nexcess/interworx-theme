@@ -42,12 +42,10 @@ h1 span:not(:first-of-type) {
 .iw-table {
   border: none;
 }
-td,
-th {
+.iw-table td,
+table:first-child > td,
+table:first-child > th {
   padding: 10px;
-}
-.iw-table * {
-  text-align: left;
 }
 .iw-table-hd {
   color: #273339;
@@ -96,8 +94,6 @@ tr.row2 {
   margin: 10px 0;
   text-align: center;
 }
-
-
 /* -- Table -- */
 .iw-fake-table-hd {
   border: none;
@@ -136,10 +132,6 @@ input[type="button"] {
   border-color: #868e96;
   margin-right: 3px!important;
 }
-
-
-
-
 .iw-box {
   margin-bottom: 20px;
   background-color: #fff;
@@ -161,18 +153,14 @@ input[type="button"] {
 }
 .iw-box .bd {
   padding: 15px;
+  border-top: none;
 }
-
-
-
 tr.ruler:hover input:focus,
 .iw-password-gen:hover {
   color: #fff;
   background-color: #727b84;
   border-color: #6c757d;
 }
-
-
 #pass_genpassword {
   font-family: monospace;
   font-size: 14px;
@@ -255,7 +243,6 @@ tr.ruler:hover input:focus,
 table.iw-table-payload, .iw-fake-table-hd, .iw-box {
   background-color: #fff;
 }
-
 .iw-menu-current:before {
   content: none;
 }
@@ -300,9 +287,6 @@ table.iw-table-payload, .iw-fake-table-hd, .iw-box {
 .iw-submenu.iw-menu-open .iw-submenu.iw-menu-open img.iw-i {
   display: none;
 }
-
-
-
 #iw-sw-lostpass html, #iw-sw-lostpass body,
 #iw-nw-lostpass html, #iw-nw-lostpass body,
 #iw-sw-index html, #iw-sw-index body,
@@ -337,6 +321,9 @@ div #hd {
   position: absolute;
   top:0;
   left: 0;
+}
+#iw-sidebar-container {
+  background-color: #273339;
 }
 .iw-yui #yui-main {
   float:right;
@@ -385,7 +372,7 @@ div #hd {
 }
 #iw-sidebar {
   background-color: #273339;
-  height: 100vh;
+  min-height: 100vh;
 }
 #iw-sidebar a:link, #iw-sidebar a:visited, #iw-sidebar a:active {
   color: #a7b1c2;
@@ -486,10 +473,10 @@ div #hd {
 }
 .yui-skin-sam .iw-popup .yui-panel .hd {
   background: none;
-  background-color: #2f4050;
-  border: 1px solid #808080;
-  border-bottom: none;
-  padding: 0 0 0 10px;
+  background-color: #00aeef;
+  border: none;
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
 }
 .yui-skin-sam .iw-popup .yui-panel .bd {
   background-image: none;
@@ -500,7 +487,8 @@ div #hd {
   background-color: #FFF;
 }
 .iw-popup .hd .l {
-  color: #FFF;
+  color: #fff;
+  font-size: 18px;
 }
 /* smartphones, tablets (portrait) ----------- */
 @media only screen
