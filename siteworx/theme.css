@@ -1,9 +1,540 @@
-/* NEXCESS.NET Theme SiteWorx CSS File */
-
-.iw-box .hd, .iw-box .ft {
-  background: #FF7D23;
+html,body{
+  background-color: #fff;
+  color: #273339;
 }
-
+.logo {
+  width:175px;
+  padding: 10px;
+}
+input[type="text"], input[type="email"], input[type="password"], textarea {
+  padding: .5rem .75rem;
+  color: #495057;
+  background-color: #fff;
+  background-image: none;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 5px;
+}
+select {
+  height: calc(1.8125rem + 2px);
+  padding: .25rem .5rem;
+  font-size: .875rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-image: none;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+body .iw-form .yui-ac .iw-form-img {
+  top: 7px;
+}
+h1 {
+  font-size: 18px;
+  border-bottom: 1px solid #f1f1f1;
+}
+h1 span:not(:first-of-type) {
+  font-size: 80%;
+}
+/* -- Table -- */
+.iw-table {
+  border: none;
+}
+.iw-table td,
+table:first-child > td,
+table:first-child > th {
+  padding: 10px;
+}
+.iw-table-hd {
+  color: #273339;
+  font-size: 12px;
+  background: none;
+  text-shadow: none;
+  vertical-align: middle;
+  text-align: left;
+  padding: 8px;
+  line-height: 1.42857143;
+  border-bottom: 1px solid #f1f1f1;
+}
+tr.ruler {
+  border-bottom: 1px solid #f1f1f1;
+}
+#iw-sidebar .iw-table {
+  text-align: center;
+}
+body .iw-form .yui-ac {
+  width: auto;
+  padding: 0;
+}
+.iw-sb-box .iw-table td {
+  padding: 0;
+  background-color: transparent;
+}
+.iw-table-ft {
+  text-align: right;
+}
+.iw-table-ft td,
+.iw-payload-sortable span {
+  border: none;
+}
+tr.row2 {
+  background-color: #fff;
+}
+#ftp_add_user-shell .iw-table,
+[id^="add"] .iw-table {
+  width: auto;
+  margin: 0 auto;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.iw-status {
+  margin: 10px 0;
+  text-align: center;
+}
+/* -- Table -- */
+.iw-fake-table-hd {
+  border: none;
+}
+.button,
+input[type="button"] {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .25rem .5rem;
+  font-size: .875rem;
+  line-height: 1.5;
+  border-radius: .2rem;
+  transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.button[type="submit"] {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.button[type="submit"]:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+.iw-password-gen {
+  color: #fff;
+  background-color: #868e96;
+  border-color: #868e96;
+  margin-right: 3px!important;
+}
 .iw-box {
-  border: 1px solid #FF7D23;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .05)
+}
+.iw-box .hd {
+  color: #333;
+  font-size: 14px;
+  line-height: 1;
+  background-color: #f5f5f5;
+  border-color: #ddd;
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.iw-box .bd {
+  padding: 15px;
+  border-top: none;
+}
+tr.ruler:hover input:focus,
+.iw-password-gen:hover {
+  color: #fff;
+  background-color: #727b84;
+  border-color: #6c757d;
+}
+#pass_genpassword {
+  font-family: monospace;
+  font-size: 14px;
+  padding: 2px 0;
+}
+.iw-form .iw-form-input .iw-verystrong {
+  color: green;
+}
+.iw-sb-box .hd {
+  background: none;
+  margin: 0;
+  color: #fff;
+  font-weight: normal;
+}
+#managing h2 {
+  font-size: 1.5em;
+}
+#hd {
+  background: none;
+}
+#bd {
+  background-image: none;
+  padding: 0 1em 0 0;
+  height: 100vh;
+}
+#ft {
+  clear: both;
+  font-weight: normal;
+  font-size: 10px;
+  color: #c0c0c0;
+  text-align: right;
+  background: none;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 14px;
+}
+#iw-hd {
+  text-align: right;
+  background: none;
+  padding-bottom: 19px;
+}
+#iw-quickmenu {
+  line-height: 25px;
+  padding-right: 10px;
+  background: none;
+  position: relative;
+  left: 0;
+  top: 0;
+  float: right;
+}
+#iw-quickmenu li {
+  float: left;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 93%;
+  background: none;
+}
+#iw-quickmenu a {
+  color: #C0C0C0;
+  font-weight: bold;
+  display: block;
+  padding: 0 10px 0 13px;
+  background: none;
+}
+#iw-quickmenu .iw-quickmenu-first a {
+  padding-left: 26px;
+  background: none;
+}
+#yui-main {
+  min-height: 0;
+}
+.iw-yui #yui-main {
+  background: none;
+}
+table.iw-table-payload, .iw-fake-table-hd, .iw-box {
+  background-color: #fff;
+}
+.iw-menu-current:before {
+  content: none;
+}
+.iw-menu-link.iw-menu-parent,
+.iw-menu-link.iw-menu-parent-open,
+.iw-menu-link.iw-menu-parent-open:hover,
+.iw-menu-link.iw-menu-parent:hover {
+  background: none;
+}
+#iw-menu a,
+#iw-menu ul {
+  border: none;
+  border-left: 4px solid transparent;
+}
+#iw-menu a:hover {
+  border: none;
+  border-left: 4px solid transparent;
+}
+#iw-menu ul.iw-submenu.iw-menu-open {
+ border-left: 4px solid #19aa8d;
+ margin-left: 0;
+ margin-bottom: 4px;
+ padding-left: 12px;
+}
+#iw-menu a.iw-menu-parent-open::after {
+  content:"∨";
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+#iw-menu a.iw-menu-parent-open {
+ border-left: 4px solid #19aa8d;
+}
+#iw-menu ul.iw-submenu a.iw-menu-parent-open {
+  border: none;
+  border-left: 4px solid transparent;
+}
+#iw-menu ul.iw-submenu.iw-menu-open ul.iw-submenu.iw-menu-open {
+ border-left: none;
+ padding-left: 0;
+}
+.iw-submenu.iw-menu-open .iw-submenu.iw-menu-open img.iw-i {
+  display: none;
+}
+#iw-sw-lostpass html, #iw-sw-lostpass body,
+#iw-nw-lostpass html, #iw-nw-lostpass body,
+#iw-sw-index html, #iw-sw-index body,
+#iw-nw-index html, #iw-nw-index body {
+  background:#ABABAB;
+}
+#doc3 {
+  /* Work-around for IE since it doesn't support min-width
+   * The minimum width for IE is larger than for other browers, since it doesn't
+   * collapse things as neatly as others
+   */
+  width:expression(document.body.clientWidth < 1010? "999px": "auto" );
+  /* Width at which the logos start to overlap the quick menu */
+  min-width: 860px;
+  margin: 0;
+}
+div #hd {
+  background-color: #fff;
+}
+#hd a {
+  border-bottom: 0;
+}
+#ft a {
+  font-family: verdana, helvetica, arial, sans-serif;
+  font-weight: normal;
+  color: #C0C0C0;
+}
+.iw-yui .yui-b {
+  float:left;
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+}
+#iw-sidebar-container {
+  background-color: #273339;
+}
+.iw-yui #yui-main {
+  float:right;
+  margin-left:-220px;/* IE: preserve layout at narrow widths */
+  padding-bottom: 0;
+  margin-bottom: 100px;
+}
+#iw-content {
+  margin-left: 200px;
+  padding-left: 10px;
+}
+/* This fixes IE6 and 7 */
+.iw_ie #iw-hd {
+  padding-bottom: 17px;
+}
+/* This fixes IE8 */
+.iw_ie8 #iw-hd {
+  padding-bottom: 15px;
+}
+#hd h2 {
+  font-weight: bold;
+  font-size: 15px;
+  font-variant: small-caps;
+  margin-left: 15px;
+  letter-spacing: 0.1em;
+  position: absolute;
+  line-height: 30px;
+}
+#iw-ft {
+  background: none;
+  padding: 0;
+}
+.iw-left {
+  float: none;
+  padding: 0;
+}
+#managing {
+  font-weight: bold;
+  margin: 0;
+  padding: 5px 0;
+}
+#iw-quickmenu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#iw-sidebar {
+  background-color: #273339;
+  min-height: 100vh;
+}
+#iw-sidebar a:link, #iw-sidebar a:visited, #iw-sidebar a:active {
+  color: #a7b1c2;
+  font-weight: 200;
+  border-radius: 0;
+}
+#iw-sidebar a:hover, #iw-menu a:hover, .iw-menu-current {
+  background-color: transparent;
+  color: #fff;
+}
+#iw-sidebar a.iw-menu-current:link,
+#iw-sidebar a.iw-menu-current:visited,
+#iw-sidebar a.iw-menu-current:active {
+  color: #fff;
+  font-weight: 600;
+}
+#iw-menu {
+  width: auto;
+}
+#iw-menu, #iw-sidebar {
+  margin: 0;
+}
+#iw-sidebar #iw-menu {
+  margin-top: 1em;
+}
+#iw-menu a{
+  position:relative;
+  padding: .5rem 1rem;
+}
+#iw-menu li:before{
+  border-radius:3px;
+  width:100%;
+  left:0;
+  height:2.3em;
+  position:absolute;
+  display:block;
+  content:" ";
+  background-image: none;
+}
+/*
+ * LOGIN PAGE STUFF
+ */
+#iw-login #doc3 {
+  width: 750px;
+  min-width: 100px;/* Arbitrarily smaller to override #doc3 min-width */
+  margin: auto;
+}
+#iw-login #iw-quickmenu {
+  display: none;
+}
+#iw-login #hd h2 {
+  display: none;
+}
+#iw-login #bd {
+  background: #FFF url(images/login_left.jpg) no-repeat scroll 164px 40px;
+  text-align: center;
+  padding: 0;
+}
+#iw-login #iw-bd {
+  background: url(images/login_right.jpg) no-repeat scroll right bottom;
+}
+#iw-login #iw-bd-hd {
+  background: url(images/login_bg.jpg) no-repeat scroll left bottom;
+}
+#iw-login #iw-bd-hd h1 {
+  font-size: 16px;
+  line-height: 28px;
+  padding-top: 12px;
+  font-variant: small-caps;
+  margin-left: 275px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+#iw-login #bd form {
+  margin-top: 6em;
+  padding-bottom: 6em;
+}
+#iw-login #bd form table {
+  margin: auto;
+  text-align: left;
+}
+#iw-login #bd td {
+  padding: 3px;
+}
+#iw-login #ft {
+  background: #4C4C4C;
+}
+#iw-login #iw-ft {
+  background: none;
+  padding: 0;
+}
+#iw-login #iw-ft a {
+  color: #C0C0C0;
+}
+#iw-login .iw-negative-box {
+  margin: 1em auto -3em;
+  width: 300px;
+}
+.yui-skin-sam .iw-popup .yui-panel .hd {
+  background: none;
+  background-color: #00aeef;
+  border: none;
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.yui-skin-sam .iw-popup .yui-panel .bd {
+  background-image: none;
+  padding-top: 25px;
+}
+.yui-skin-sam .iw-popup .yui-panel .bd,
+.yui-skin-sam .iw-popup .yui-panel .ft {
+  background-color: #FFF;
+}
+.iw-popup .hd .l {
+  color: #fff;
+  font-size: 18px;
+}
+/* smartphones, tablets (portrait) ----------- */
+@media only screen
+ and (orientation : portrait) {
+  .iw-portable #yui-main,
+  .iw-portable #bd {
+    background-image: none;
+  }
+  .iw-portable #bd {
+    padding-left: 1em;
+  }
+  .iw-portable #hd h2 {
+    display: none;
+  }
+  .iw-portable #iw-ft {
+    background: url(images/ft_login.jpg) no-repeat scroll left 37px;
+  }
+  .iw-smartphone #iw-quickmenu-help {
+    display: none;
+  }
+}
+.iw-no-scale #iw-quickmenu {
+  left: 0;
+  top: 50px;
+}
+.iw-no-scale #iw-quickmenu ul {
+  position: static;
+}
+.iw-no-scale #hd {
+  height: 94px;
+}
+.iw-no-scale #iw-hd {
+  background: none;
+}
+.iw-portable #doc3 {
+  min-width: inherit;
+}
+.iw-no-scale #iw-hd-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 0;
+}
+.iw-no-scale #hd .iw-left {
+  float: none;
+}
+.iw-smartphone #iw-hd-right {
+  visibility: hidden;
 }
