@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600');
+
+
 html,body{
   background-color: #32425a;
   color: #fff;
@@ -38,7 +41,9 @@ h1 {
 h1 span:not(:first-of-type) {
   font-size: 80%;
 }
-/* -- Table -- */
+/* 
+-------------------------------------------------------------------------- Table -- 
+*/
 .iw-table {
   border: none;
   background-color: #f8f9f8;
@@ -61,8 +66,18 @@ table:first-child > th {
   border-bottom: 1px solid #f1f1f1;
 }
 tr.ruler {
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 1px solid #cdcccc;
 }
+tr.ruler:last-child{
+  border: none;
+}
+tr.ruler td:last-child {
+  text-align: right;
+}
+.iw-table tr.ruler:hover{
+  background:none;
+}
+
 #iw-sidebar .iw-table {
   text-align: center;
 }
@@ -96,9 +111,34 @@ tr.row2 {
   margin: 10px 0;
   text-align: center;
 }
-/* -- Table -- */
 .iw-fake-table-hd {
   border: none;
+}
+/* 
+-------------------------------------------------------------------------- Table -- 
+*/
+#doc3 {
+  /* Work-around for IE since it doesn't support min-width
+   * The minimum width for IE is larger than for other browers, since it doesn't
+   * collapse things as neatly as others
+   */
+  width:expression(document.body.clientWidth < 1010? "999px": "auto" );
+  /* Width at which the logos start to overlap the quick menu */
+  min-width: 860px;
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+div #hd {
+  background-color: transparent;
+  min-height:50px;
+}
+#hd a {
+  border-bottom: 0;
+}
+#ft a {
+  font-family: verdana, helvetica, arial, sans-serif;
+  font-weight: normal;
+  color: #C0C0C0;
 }
 .button,
 input[type="button"] {
@@ -135,26 +175,44 @@ input[type="button"] {
   margin-right: 3px!important;
 }
 .iw-box {
-  margin-bottom: 20px;
+  margin: 30px 0 50px 0;
   background-color: #f8f9f8;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
   color:#282828;
+  font-size: 18px;
+  
+  
 }
 .iw-box .hd {
-  color: #333;
+  color: #ffffff;
   font-size: 14px;
   line-height: 1;
-  background-color: #f5f5f5;
+  background-color:transparent;
   border-color: #ddd;
   padding: 10px 15px;
   border-bottom: 1px solid transparent;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   text-align: right;
+  margin:-40px 0 0 0;
+  font-size: 21px;
+  font-weight: normal;
 }
+.iw-box .hd span.iw-link-wrapper, .iw-qh{
+  font-weight:200;
+  color:#fff;
+  font-size: 16px
+}
+.iw-box .hd a:link, .iw-box .hd .quickhelp{
+color:#fff;
+font-weight:200;
+}
+.iw-box .hd a:hover, .quickhelp:hover{
+  color:#1398d0;
+} 
 .iw-box .bd {
   padding: 15px;
   border-top: none;
@@ -299,28 +357,7 @@ table.iw-table-payload, .iw-fake-table-hd, .iw-box {
 #iw-nw-index html, #iw-nw-index body {
   background:#ABABAB;
 }
-#doc3 {
-  /* Work-around for IE since it doesn't support min-width
-   * The minimum width for IE is larger than for other browers, since it doesn't
-   * collapse things as neatly as others
-   */
-  width:expression(document.body.clientWidth < 1010? "999px": "auto" );
-  /* Width at which the logos start to overlap the quick menu */
-  min-width: 860px;
-  margin: 0;
-}
-div #hd {
-  background-color: transparent;
-  min-height:50px;
-}
-#hd a {
-  border-bottom: 0;
-}
-#ft a {
-  font-family: verdana, helvetica, arial, sans-serif;
-  font-weight: normal;
-  color: #C0C0C0;
-}
+
 .iw-yui .yui-b {
   float:left;
   width: 200px;
@@ -434,7 +471,7 @@ div #hd {
   background-image: none;
 }
 /*
- * LOGIN PAGE STUFF
+ -------------------------------------------------------------------------- LOGIN PAGE STUFF
  */
 #iw-login #doc3 {
   width: 750px;
@@ -511,7 +548,12 @@ div #hd {
   color: #fff;
   font-size: 18px;
 }
-/* smartphones, tablets (portrait) ----------- */
+.iw-status{
+  border-radius: 20px;
+}
+/* 
+-------------------------------------------------  smartphones, tablets (portrait) -- 
+*/
 @media only screen
  and (orientation : portrait) {
   .iw-portable #yui-main,
