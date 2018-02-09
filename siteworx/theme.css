@@ -2,7 +2,7 @@
 
 
 html,body{
-  background-color: #32425a;
+  background-color: #3f536e;
   color: #fff;
 }
 
@@ -116,8 +116,11 @@ tr.row2 {
 .iw-fake-table-hd {
   border: none;
 }
+#usercontent > tbody > tr > td:first-child{
+  width:55% !important;
+}
 /* 
--------------------------------------------------------------------------- Table -- 
+-------------------------------------------------------------------------- main structure -- 
 */
 #doc3 {
   /* Work-around for IE since it doesn't support min-width
@@ -131,7 +134,7 @@ tr.row2 {
   font-family: 'Work Sans', sans-serif;
 }
 div #hd {
-  background-color: transparent;
+  background-color: #32425a;
   min-height:50px;
 }
 #hd a {
@@ -434,6 +437,20 @@ table.iw-table-payload, .iw-fake-table-hd, .iw-box {
   margin:5px 0;
   transition-timing-function: ease-in-out;
 }
+/* menu display animation-----*/
+/* .iw-submenu .iw-submenu{
+  display:block;
+  height:0;
+  overflow: hidden;
+  transition: height, 1s linear;
+}
+
+.iw-submenu .iw-submenu.iw-menu-open {
+  display: block;
+  height: auto;
+  transition: height, 0.5s linear;
+} */
+/* ------------------------ */
 #iw-menu, #iw-sidebar {
   margin: 0;
 }
@@ -446,10 +463,13 @@ table.iw-table-payload, .iw-fake-table-hd, .iw-box {
   box-sizing: border-box;
 }
 
+
 #iw-menu .iw-submenu.iw-menu-open a{
   padding: 10px 5px 10px  0px;
 }
-
+#iw-menu .iw-submenu.iw-menu-open  a.iw-menu-parent-open{
+  color:#fff;
+}
 #iw-menu li:before{
   border-radius:3px;
   width:100%;
@@ -531,7 +551,7 @@ box-shadow: inset -20px 0 9px -7px rgba(0,0,0,0.2);
   display: none;
 }
 #iw-menu > li > .iw-menu-link::before,
-.iw-menu-current:hover::before
+#iw-menu > li > .iw-menu-current:hover::before
  {
   content: "";
   display: inline-block;
@@ -544,7 +564,7 @@ box-shadow: inset -20px 0 9px -7px rgba(0,0,0,0.2);
   opacity: .2;
   border-radius: 0 3px 3px 0;
   margin:0;
-  transition: .5s;
+  transition: .3s;
   transition-timing-function: ease-out;
 }
 #iw-menu > li > .iw-menu-link:hover:before,
@@ -556,7 +576,7 @@ box-shadow: inset -20px 0 9px -7px rgba(0,0,0,0.2);
   width:100%;
 }
 #iw-menu > li > .iw-menu-link{
-  transition: .5s;
+  transition: .3s;
   transition-timing-function: ease-out;
 }
 #iw-menu > li > .iw-menu-parent:hover, 
