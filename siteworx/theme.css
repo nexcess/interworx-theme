@@ -2,7 +2,7 @@
 
 
 html,body{
-  background-color: #3f536e;
+  background-color: #2d3b51;
   color: #fff;
 }
 
@@ -163,7 +163,7 @@ color:#fff;
   font-family: 'Work Sans', sans-serif;
 }
 div #hd {
-  background-color: #32425a;
+  background-color: #273339;
   min-height:50px;
 }
 #hd a {
@@ -183,7 +183,6 @@ div #hd {
 }
 #bd {
   background-image: none;
-  background: #3f536e;
   padding: 0 1em 0 0;
   min-height: 100vh;
   color:#282828;
@@ -386,7 +385,7 @@ table.iw-table-payload, .iw-box {
   box-sizing: border-box;
 }
 #iw-sidebar-container {
-  background: #32425a url('images/Logowatermark.png') no-repeat top right; 
+  background: #273339 url('images/Logowatermark.png') no-repeat top right; 
   box-shadow: inset -20px 0 9px -7px rgba(0,0,0,0.2);
   padding-bottom:50px;
 }
@@ -621,13 +620,12 @@ background: url('images/AddEmail.png') no-repeat top center;
  margin-left: 0;
  margin-bottom: 4px;
  padding-left: 12px;
- background:#2d3b51;
  padding:0;
 }
 #iw-menu ul.iw-submenu.iw-menu-open > li{
 border-top:solid 1px #32425a;
 padding:0 0 0 12px;
-box-shadow: inset -20px 0 9px -7px rgba(0,0,0,0.2);
+/* box-shadow: inset -20px 0 9px -7px rgba(0,0,0,0.2); */
 }
 
 
