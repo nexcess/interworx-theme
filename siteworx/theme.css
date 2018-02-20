@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600');
 
+@import url('https://fonts.googleapis.com/css?family=Kanit:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i');
 
 html,body{
-  background-color: #2d3b51;
-  color: #fff;
+  background-color: #FAFAFA;
+  color: #aeafb0;
 }
 
 input[type="text"], input[type="email"], input[type="password"], textarea {
@@ -32,32 +32,42 @@ body .iw-form .yui-ac .iw-form-img {
   top: 7px;
 }
 h1 {
-  font-size: 18px;
+  font-size: 26px;
+font-weight: 200;
   border-bottom: none;
-  color:#fff;
-  font-weight: 400;
+  color:#aeafb0; 
 }
 h1 a.iw-link,h1 .quickhelp {
-color:#fff;
+color:#aeafb0;
 }
 h1 a.iw-link:hover,h1 .quickhelp{
   color:#1398d0;
 }
+a:active, a:hover{
+  color:#1398d0;
+}
 h1 span:not(:first-of-type) {
-  font-size: 80%;
+  font-size: 70%;
 }
 .iw-link-wrapper{
 color:#f8f8f8;
 }
+.iw-req, .iw-req-desc{
+  vertical-align: bottom;
+}
 /* 
 -------------------------------------------------------------------------- Table -- 
 */
-.iw-table {
-  border: none;
-  background-color: #f8f9f8;
-  color:#282828;
-  border-radius: 3px; 
+.iw-table { 
+  color:#282828; 
   font-size:14px;
+  border-collapse:separate;
+  border: solid 1px #acafb0;
+  background:#fff;
+  border-radius: 3px;
+}
+.iw-box .iw-table{
+  border:none;
 }
 #iw-awesome-bar .iw-table {
 background-color: transparent;
@@ -68,10 +78,8 @@ table:first-child > th {
   padding: 10px;
 }
 .iw-table-hd {
-  color: #273339;
-  background: #eeedeb;
-  font-size: 12px;
-  background: none;
+  color: #0091c5;
+  font-size: 13px;
   text-shadow: none;
   vertical-align: middle;
   text-align: center;
@@ -79,8 +87,7 @@ table:first-child > th {
   line-height: 1.42857143;
   border-bottom: 1px solid #f1f1f1;
   text-transform: uppercase;
-  font-weight:400;
-  font-size:14px;
+  font-weight:700;
 }
 .iw-table-hd td:first-child {
 text-align: left;
@@ -95,7 +102,7 @@ tr.ruler td:last-child {
   text-align: right;
 }
 .iw-table tr.ruler:hover{
-  background:#f8f9f8;
+  background:#f2f9fb;
 }
 #iw-sidebar .iw-table {
   text-align: center;
@@ -116,17 +123,15 @@ body .iw-form .yui-ac {
   border: none;
 }
 tr.row2 {
-  background-color: tranparent;
+  background-color: transparent;
 }
 #ftp_add_user-shell .iw-table,
 [id^="add"] .iw-table {
   width: auto;
   margin: 0 auto 10px;
   padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  border:none;
-  overflow:hidden;
+  border: solid 1px #acafb0;
+  border-radius: 3px;
 }
 .iw-status {
   margin: 10px 0;
@@ -148,6 +153,11 @@ color:#fff;
 #usercontent > tbody > tr > td:first-child{
   width:55% !important;
 }
+.iw-error-row, .row1 .iw-error-row, .row1.iw-error-row,
+.row2 .iw-error-row, .row2.iw-error-row{
+  background:none;
+  color:red !important;
+}
 /* 
 -------------------------------------------------------------------------- main structure -- 
 */
@@ -160,7 +170,8 @@ color:#fff;
   /* Width at which the logos start to overlap the quick menu */
   min-width: 860px;
   margin: 0;
-  font-family: 'Work Sans', sans-serif;
+  /* font-family: 'Work Sans', sans-serif; */
+  font-family: 'Kanit', sans-serif;
 }
 div #hd {
   background-color: #273339;
@@ -262,7 +273,7 @@ background: rgb(19,152,209,1);
   font-weight: 500;   
 }
 .iw-box .hd {
-  color: #ffffff;
+  color: #bfc1c5;
   font-size: 14px;
   line-height: 1;
   background-color:transparent;
@@ -274,13 +285,13 @@ background: rgb(19,152,209,1);
   text-align: right;
   margin:-45px 0 0 0;
   font-size: 26px;
-  font-weight: 300;
+  font-weight: 100;
 }
 .iw-positive .iw-box{
-  font-size:30px;
-  font-weight:300;
+  font-size: 34px;
+font-weight: 100;
   background: transparent;
-  color:#fff;
+  color:#aeafb0;
   border:none;
   border-bottom:1px solid #f8f8f8;
   border-radius: 0;
@@ -288,15 +299,16 @@ background: rgb(19,152,209,1);
 }
 .iw-box .hd span.iw-link-wrapper, .iw-qh{
   font-weight:200;
-  color:#fff;
+  color:#bfc1c5;
   font-size: 16px
 }
 .iw-box .hd a:link, .iw-box .hd .quickhelp{
-color:#fff;
+color:#bfc1c5;
 font-weight:200;
 }
 .iw-box .hd a:hover, .iw-box .hd .quickhelp:hover{
   color:#1398d0;
+  font-weight: 200;
 } 
 .iw-box .bd {
   padding: 15px;
@@ -304,7 +316,7 @@ font-weight:200;
 }
 tr.ruler:hover input:focus,
 .iw-password-gen:hover {
-  color: #fff;
+  color: #bfc1c5;
   background-color: #727b84;
   border-color: #6c757d;
 }
@@ -319,7 +331,7 @@ tr.ruler:hover input:focus,
 .iw-sb-box .hd {
   background: none;
   margin: 0;
-  color: #fff;
+  color: #bfc1c5;
   font-weight: normal;
 }
 
@@ -365,7 +377,7 @@ tr.ruler:hover input:focus,
   background: none;
 }
 table.iw-table-payload, .iw-box {
-  background-color: #f8f9f8;
+  background-color: #fff;
 }
 #iw-sw-lostpass html, #iw-sw-lostpass body,
 #iw-nw-lostpass html, #iw-nw-lostpass body,
@@ -447,6 +459,7 @@ table.iw-table-payload, .iw-box {
 }
 #iw-popup_c{
 color:#282828;
+box-shadow: 7px 13px 10px rgba(0, 0, 0, .2)
 }
 
 /*
@@ -532,7 +545,7 @@ background: url('images/AddEmail.png') no-repeat top center;
 
 #iw-sidebar a:link, #iw-sidebar a:visited, #iw-sidebar a:active {
   color: #a7b1c2;
-  font-weight: 200;
+  font-weight: 100;
   border-radius: 0;
 }
 #iw-sidebar a:hover, #iw-menu a:hover, .iw-menu-current {
@@ -543,11 +556,11 @@ background: url('images/AddEmail.png') no-repeat top center;
 #iw-sidebar a.iw-menu-current:visited,
 #iw-sidebar a.iw-menu-current:active {
   color: #fff;
-  font-weight: 600;
+  font-weight: 300;
 }
 #iw-menu {
   width: auto;
-  font-size:14px;
+  font-size:15px;
 }
 
 #iw-menu > li{
@@ -630,7 +643,7 @@ padding:0 0 0 12px;
 
 
 #iw-menu > li > a{
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .iw-menu-link .iw-i{
@@ -646,6 +659,7 @@ padding:0 0 0 12px;
 }
 #iw-menu a.iw-menu-parent.iw-menu-parent-open::after {
   content:"^";
+  font-size: 20px;
 }
 #iw-menu a.iw-menu-parent-open {
  border-left: none;
@@ -655,7 +669,7 @@ padding:0 0 0 12px;
   border-left: none;
 }
 #iw-menu .iw-submenu .iw-menu-link span{ 
-  font-weight:400;
+  font-weight:300;
 }
 #iw-menu ul.iw-submenu.iw-menu-open ul.iw-submenu.iw-menu-open {
  border-left: none;
