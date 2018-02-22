@@ -535,7 +535,7 @@ a:link, a:visited, a:active, a:hover {
 }
 
 #iw-small-menu, #iw-nw-common-tasks, #iw-sw-common-tasks {
-  background: #959595 url(images/grey-tl.gif) no-repeat top left;
+  background:none;
 }
 
 #iw-small-menu {
@@ -543,7 +543,7 @@ a:link, a:visited, a:active, a:hover {
 }
 
 #iw-small-menu .bd, #iw-nw-common-tasks .bd, #iw-sw-common-tasks .bd {
-  background: #959595 url(images/grey-br.gif) no-repeat bottom right;
+  background:none;
   font-size: 14px;
 }
 .iw-menu-current:before{
