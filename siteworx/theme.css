@@ -80,6 +80,7 @@ table:first-child > th {
 .iw-table-hd {
   color: #0091c5;
   font-size: 13px;
+  background:none;
   text-shadow: none;
   vertical-align: middle;
   text-align: center;
@@ -170,10 +171,13 @@ color:#fff;
   /* Width at which the logos start to overlap the quick menu */
   min-width: 860px;
   margin: 0;
+  padding: 0;
   /* font-family: 'Work Sans', sans-serif; */
   font-family: 'Kanit', sans-serif;
 }
-div #hd {
+#hd {
+  background: none;
+  height:auto;
   background-color: #273339;
   min-height:50px;
 }
@@ -189,11 +193,9 @@ div #hd {
   border-top:solid 1px #445269;
   margin-top:1px;
 }
-#hd {
-  background: none;
-}
+
 #bd {
-  background-image: none;
+  background: none;
   padding: 0 1em 0 0;
   min-height: 100vh;
   color:#282828;
@@ -533,6 +535,9 @@ background: url('images/AddEmail.png') no-repeat top center;
 /*
 ------------------------------------------------------------------------------------ Menu
 */
+#iw-awesome-bar .bd{
+  background:none;
+}
 #iw_awesome_input{
   font-size:12px;
   color:#999;
