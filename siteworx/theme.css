@@ -552,7 +552,7 @@ table.iw-table-payload,
 #iw-popup_c {
   color: #282828;
 }
-#iw-popup {
+#iw-popup, #iw-modal-popup_h {
   box-shadow: 7px 13px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -738,6 +738,7 @@ table.iw-table-payload,
   margin-bottom: 4px;
   padding-left: 12px;
   padding: 0;
+  border-bottom:solid 1px #32425a;
 }
 #iw-menu ul.iw-submenu.iw-menu-open > li {
   border-top: solid 1px #32425a;
