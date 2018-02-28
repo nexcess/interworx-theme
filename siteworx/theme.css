@@ -552,14 +552,17 @@ table.iw-table-payload,
 #iw-popup_c {
   color: #282828;
 }
-#iw-popup, #iw-modal-popup_h {
+#iw-popup, .iw-popup .yui-panel {
   box-shadow: 7px 13px 10px rgba(0, 0, 0, 0.2);
 }
 
 .iw-status {
   font-weight: 300;
 }
-
+.charCounter{
+  position: relative;
+  left: -70px
+}
 /*
 ------------------------------------------------------------------------------- Common Tasks boxes
 */
