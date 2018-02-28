@@ -34,7 +34,7 @@ select {
 body .iw-form .yui-ac .iw-form-img {
   top: 7px;
 }
-h1 {
+.hd, h1{
   font-size: 26px;
   font-weight: 200;
   border-bottom: none;
@@ -42,7 +42,8 @@ h1 {
 }
 h1 a.iw-link,
 h1 .quickhelp,
-.quickhelp {
+.quickhelp,
+.iw-table-hd .quickhelp {
   color: #aeafb0;
 }
 h1 a.iw-link:hover,
@@ -61,16 +62,23 @@ a:hover {
 }
 h1 span:not(:first-of-type) {
   font-size: 70%;
-}
-.iw-link-wrapper {
-  color: #aeafb0;
-}
+} 
+.iw-link-wrapper,
 .iw-link-wrapper .iw-link {
   color: #aeafb0;
-  font-size: 20px;
+  font-size: 18px;
 }
+.iw-link-wrapper::before ,
+.iw-link-wrapper::after {
+font-size:20px;
+font-weight: 300;
+  }
 .iw-link-wrapper a.iw-link:hover {
   color: #1398d0;
+}
+.iw-link-disabled{
+  opacity: .4;
+  text-decoration: none;
 }
 .iw-req,
 .iw-req-desc {
@@ -81,7 +89,7 @@ h1 span:not(:first-of-type) {
 -------------------------------------------------------------------------- Table -- 
 */
 table {
-  font-size: 16px;
+  font-size: 15px;
 }
 .iw-table {
   color: #282828;
@@ -175,7 +183,6 @@ tr.row2 {
 .iw-fake-table-hd {
   border: none;
   background-color: transparent;
-  color: #fff;
   padding: 5px;
   font-size: 14px;
 }
@@ -195,6 +202,9 @@ tr.row2 {
 .row2.iw-error-row {
   background: none;
   color: red !important;
+}
+.iw-form .iw-form-input{
+  white-space: normal;
 }
 /* 
 -------------------------------------------------------------------------- main structure -- 
@@ -619,7 +629,9 @@ table.iw-table-payload,
 #password_strength {
   font-size: 16px;
 }
-
+.yui-skin-sam .mask{
+  position:fixed;
+}
 /*
 ------------------------------------------------------------------------------------ Menu
 */
@@ -677,7 +689,7 @@ table.iw-table-payload,
   margin: 0;
 }
 #iw-sidebar #iw-menu {
-  margin-top: 1em;
+  margin-top: 0;
 }
 #iw-menu a {
   position: relative;
