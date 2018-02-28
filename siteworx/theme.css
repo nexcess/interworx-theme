@@ -552,7 +552,7 @@ table.iw-table-payload,
 #iw-popup_c {
   color: #282828;
 }
-#iw-popup_c .yui-skin-sam .yui-panel {
+#iw-popup {
   box-shadow: 7px 13px 10px rgba(0, 0, 0, 0.2);
 }
 
