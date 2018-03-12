@@ -555,7 +555,21 @@ table.iw-table-payload,
 #iw-popup, .iw-popup .yui-panel {
   box-shadow: 7px 13px 10px rgba(0, 0, 0, 0.2);
 }
-
+#iw-mb{
+  margin:100px 0 0 0;
+  border:solid 1px #acafb0;
+  box-shadow: 7px 13px 10px rgba(0, 0, 0, 0.2);
+  background:#00aeef;
+  color:#fff; 
+}
+#iw-mb_c #iw-mb .iw-box{
+  color:#fff; 
+  border-bottom:none;
+  text-align: center;
+  font-weight:200;
+  font-size:26px;
+  font-family: "Kanit", sans-serif;
+}
 .iw-status {
   font-weight: 300;
 }
