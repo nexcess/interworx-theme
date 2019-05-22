@@ -910,6 +910,14 @@ table.iw-table-payload,
 #iw-menu-logout-sub a.iw-menu-current {
   color: #fb772f !important;
 }
+
+/* removes the "authentication" option which allows setting up 2fa
+ * see https://nexcess.atlassian.net/browse/SOS-1110
+ */
+#iw-menu-admin-sub > li:first-child{
+  display:none;
+}
+
 /*
  -------------------------------------------------------------------------- LOGIN PAGE STUFF
  */
